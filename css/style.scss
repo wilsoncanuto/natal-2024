@@ -1,0 +1,47 @@
+body{
+	background-color: black;
+	color: white;	
+
+	font-size: 62.5%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.txt-manutencao {
+	font-size: 2.5em;
+}
+
+p{
+	font-size: 1.4em;
+}
+
+
+/***********************************************************************************
+
+MEDIA QUERIES
+
+*************************************************************************************/
+
+/*
+@media screen and (max-width: 800px){
+	body{ 
+		background-image: url(../img/bg-720.jpg);
+		//background-position: center;
+		background-repeat: no-repeat;
+		background-position: center -30px;
+	}	
+} */
+
+@media screen and (min-width: 800px){
+	body{ 
+		background-image: url(../img/bg.jpg);	
+		background-position: center;
+		background-repeat: no-repeat;
+		background-position: top;
+		//background-attachment: fixed;
+		background-clip: border-box;
+	}
+
+	.txt-manutencao {
+	font-size: 5em;
+	}	
+}

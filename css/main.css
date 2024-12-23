@@ -1,0 +1,71 @@
+/***********************************************************************************
+
+NORMALIZACAO
+
+*************************************************************************************/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+body {
+  overflow: scroll; }
+
+/***********************************************************************************
+
+MOBILE FIRST
+
+*************************************************************************************/
+main {
+  margin-top: 5%;
+  margin-bottom: 6%; }
+
+.hide {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  text-align: center; }
+
+.logo-total {
+  width: 150px;
+  margin: auto;
+  margin-bottom: 55px;
+  text-align: center; }
+
+.txt-manutencao {
+  margin: 50px 0; }
+
+.botao {
+  width: 250px;
+  margin: 10px 0; }
+
+.menu-social {
+  width: 100%; }
+  .menu-social ul li {
+    display: inline;
+    margin: 0 3%; }
+
+.botao-social {
+  width: 10%;
+  max-width: 40px;
+  margin-bottom: 20px; }
+
+footer {
+  margin-top: 20px; }
+
+/***********************************************************************************
+
+MEDIA QUERIES
+
+*************************************************************************************/
+@media screen and (min-width: 800px) {
+  .logo-topo {
+    display: inline;
+    margin-top: 2%; } }
+
+/*# sourceMappingURL=main.css.map */

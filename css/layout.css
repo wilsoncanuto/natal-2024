@@ -1,0 +1,425 @@
+/*-----------------------------------------------------------*/
+/* Layout */
+
+
+* {box-sizing: border-box;}
+body{	overflow-x: hidden;}
+ul {padding: 0;}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/*faz com que a img fique 100% do width do container dela*/
+.img-fit{
+	width: 100%;
+  object-fit: cover;  
+}
+
+.flex-container, .flex-container  * {
+	display: flex;	
+  justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/*margens laterais*/
+.margem-lateral {
+	padding: 0 5vw;
+}
+
+/*margens laterais superior e inferior*/
+.margem-total {
+	padding: 4vw 4vw;
+}
+
+/* Menu */
+
+/*mantem o menu acima de todos os outros elementos*/
+.header {
+	z-index: 9999;
+	
+}
+
+/*espaço entre os links do menu*/
+.header ul > li:not(:first-child) {margin-left: 20px;}  
+.header ul > li:not(:first-child):hover {text-decoration: underline;}
+.header ul > li:not(:first-child):active {text-decoration: underline;}
+
+.menu-header{
+	height: 66px;
+	justify-content: flex-end;
+	transition: height 0.1s ease, font-size .5s ease;
+	margin: .5rem 0;
+}
+
+.logo{margin-right: auto;} /*mantem o logo a esquerda*/
+.logo > img {	
+	height: 45px; 
+	transition: height, .7s ease;
+}
+
+/* estilo do sticky header */
+
+.logo-sticky > img {	transform: scale(.6); }
+.menu-anchor > img {	transform: scale(.8); }
+
+/*-----------------------------------------------------------*/
+/*MENU MOBILE*/
+.menu-anchor{display: none;}
+
+.menu-mobile{
+	width: 100vw;
+	padding: 0;
+	position: fixed;
+	/*top:5vh;*/
+	z-index: 9990;
+	display: none;
+}
+
+/*esconde o menu dropdown */
+.menu-translateY {
+  transform: translateY(-245px);
+}
+
+.menu-transition {transition: transform .7s;}
+
+/*esconde o menu dropdown quando o header ficar sticky*/
+.menu-translateY-sticky {
+  transform: translateY(-240px);
+	}
+
+/*revela o menu dropdown quando clicar no icone menu*/
+.menu-active .menu-mobile {
+  transform: translateY(50px);
+}
+
+/*revela o menu dropdown qnd header estiver sticky*/
+.menu-active .menu-translateY-sticky {
+  transform: translateY(30px);
+}
+
+html section{
+	transition: transform .7s;
+}
+
+.menu-active section{
+	transform: translateY(185px);
+}
+
+.menu-mobile ul li{	
+  display: block;
+  padding: 10px;
+  padding-right: 30px;
+  text-decoration: none;
+  text-align: right;
+}
+
+.menu-mobile ul li:hover {
+    text-decoration: underline;
+}
+
+
+/* slide */
+
+.slide {
+	z-index: -10;
+}
+.banner-txt {
+	width: 75vw;
+	max-width: 600px;
+	position: absolute;
+	right: 10vw;
+	bottom: 190px;
+}
+
+.my-img-fluid {
+  max-height: 95vw;
+  width: 95vw;
+  object-fit: cover;
+}
+
+.slide-container{
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+  object-fit: cover;  
+  object-position: 23%;
+}
+
+/*.slidebg:after{position:fixed;}*/
+
+/*.slidebg {
+	width: 100%;
+	height: 100%;	
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	        background-size: auto 100vh;
+	background-position: 25%;
+}*/
+
+
+/* about */
+
+.about-header {background-color: #ffffcc;}
+.title{
+	width: 50vw;
+	max-width: 400px;
+	position: absolute;
+	left: 10%;
+	top: 20%;
+}
+
+.bg1 {
+	height: 450px;
+	background-color: transparent;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.about {
+	min-height: 450px;
+	position: relative;
+	padding-bottom: 3vw;
+
+}
+
+.about-txt{	
+	background-image: url("../img/wc/fundo-verde.png");
+	/*background-position: 100% 90%;*/
+	
+	width: 80vw;
+	max-width: 1100px;
+
+	align-self: flex-start;
+
+	position: relative;
+	transform: skew(-5deg);
+
+	
+}
+
+.about-txt > * {transform: skew(5deg);}
+
+.about-txt > img {
+
+	position: absolute;
+	bottom: -50px;
+	right: -100px;
+	height: 9vw;
+}
+
+.about-txt > p {
+	text-align-last: left; 
+	position: relative;
+} 
+
+.about-txt > p > span {
+	display: block;
+	margin-bottom: 25px;
+	position: relative;
+	left: 0;		
+}
+
+.titulo  {
+	max-width: 650px;
+}
+
+.msg-ico{
+	width: 60vw;
+	margin-top: 9%;
+	justify-content: space-around;
+}
+
+.social-ico{
+	max-width: 150px;
+	width: 30vw;
+	transition: transform .3s;
+}
+.social-ico:hover {
+	transform: scale(1.5);
+}
+
+.linha-divisoria {height: 220px;}
+
+
+.redesocial {
+	margin-top: 8px;
+	width: 25px;
+	display: inline-flex;
+	align-self: center;
+}
+
+.redesocial:first-of-type{ 
+	margin-right: 20px; 
+	margin-left: 10px;
+}
+
+/*-----------------------------------------------------------*/
+/* Footer */
+
+.footer{ 
+	padding-top: 3vw;
+	justify-content: flex-start;	
+	position: relative;
+}
+
+.a-paz-do-senhor{
+	align-self: flex-start;
+}
+
+address, .a-paz-do-senhor p{
+display: block !important;
+text-align: left;
+/*position: absolute;*/
+
+/*top: 5vw;*/
+	/*font-size: 1rem;*/
+}
+
+#arroba {
+	display: inline;
+	font-family: 'Arial';
+	
+}
+
+.redes{
+	position: absolute;
+	bottom: 10px;
+	right: 5vw;
+}
+
+.redes .redesocial {
+	max-width: 7vw;
+}
+
+.redes .redesocial::first {
+    margin-right: 20px;
+}
+
+/*-----------------------------------------------------------*/
+/* MEDIA QUERIES */
+@media screen and (max-width: 960px) {
+	
+/*Letreiro do slide*/
+	.banner-txt {
+		right: 3vw;
+		/*bottom: 120px;*/
+	}
+
+	/*altera o tamanho da letra do endereço da local*/
+	.div-info-local > p {
+		font-size: 1.2rem;
+		padding: 0 15px;
+		text-align: center;
+	}
+
+
+}
+
+@media screen and (max-width: 780px) {
+	/*Letreiro do slide*/
+	.banner-txt {
+		transform: translateY(-50px);
+		/*bottom: 120px;*/
+	}
+  
+  /*MENU*/
+  /*altera o tamanho do header no mobile*/
+	.menu-header{ 
+		height: 40px;
+	}
+	.menu-header-sticky {	
+		height: 23px;
+	}
+
+	.menu-header {
+		margin-top: 8px;
+	}
+
+	.margem-total {  /*:not(.slide)*/
+		padding: 5vw 5vw;
+		/*margin-top: 10px;*/
+	}	
+	.logo > img {	height: 30px; }
+	.menu-anchor{display: inline;}
+	.menu-mobile{display: block;}
+	.menu-header li:not(.logo):not(.menu-anchor){
+		display: none;
+	}
+
+/*SLIDE*/
+	.slide{
+		/*padding: 0 ;*/
+	}
+	/*posiciona o BG para a esquerda*/
+	.slidebg {
+	  background-position: 25%;
+  }
+
+/*MENSAGENS*/
+	/*redimensiona o espaçamento dos icones das mensagens*/
+	.msg-ico{
+	width: 100vw;
+	margin-top: 19%;
+	}
+}
+
+@media screen and (max-width: 640px){
+	.margem-total {  /*:not(.slide)*/
+		padding: 5vw 5vw;
+		/*margin-top: 10px;*/
+	}	
+
+	.banner-txt {
+		transform: translateY(95px);
+		/*bottom: 120px;*/
+	}
+
+	.about {
+	  padding-bottom: 40px;
+	}	
+
+	.bg1 {
+		height: 250px;
+	}
+
+	.about-txt{
+		word-wrap: normal;
+	}
+
+	/* desentorta os elementos do quem somos*/
+	.about-txt{	transform: skew(0deg);}
+	.about-txt > * {transform: skew(0deg);}
+
+	/*realinha o logo mais proximo do texto*/
+	/*.about-txt > img { right: 0px; bottom: 0;}*/
+	.about-txt > img {
+		bottom: -8px;
+		right: -26px;
+		height: 12vw;
+	}
+
+	.about-txt {
+    background-size: cover;
+}
+
+
+	.redesocial {
+		margin-top: 5px;
+		/*width: 20px;*/
+	}
+
+	.redes{
+		right: 33vw;
+	}
+}
+

@@ -1,0 +1,122 @@
+/*-----------------------------------------------------------*/
+/* ESTILOS */
+@font-face {
+    font-family: 'geosanslight';
+    src: url('../fonts/GeosansLight.ttf');
+} 
+
+html {font-size: 10px;}
+
+body{
+	font-family: 'GeosansLight', sans-serif;
+	font-weight: bold;
+}
+
+p {
+	text-align: justify;
+	-moz-text-align-last: center; /* Code for Firefox */
+  text-align-last: center;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+	/*font-size: 1.7rem;*/
+}
+
+address {margin: 0;}
+
+
+/*-----------------------------------------------------------*/
+/* Menu */
+
+.header{
+	background-color: #1a1a1a;
+	color: white;
+	font-size: 1.6rem;
+}
+
+.header ul{list-style-type: none;}
+
+/* estilo do sticky header */
+.menu-header-sticky {	
+	font-size: 1.3rem;
+	height: 27px; 
+}
+
+.menu-mobile ul li{	
+  background-color: #1a1a1a;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+/*-----------------------------------------------------------*/
+/* cor de fundo tela principal */
+
+.slide{	background-color: }
+
+/*.slidebg {
+	background-image: url("../img/slide/banner.jpg");
+}*/
+
+/*-----------------------------------------------------------*/
+
+
+
+.about{	background-color: #8cdbf6d6;}
+
+
+.bg1{
+	
+background-image: url('../img/wc/pombinha.gif'), url('../img/wc/cidade.jpeg');
+	
+background-position:center;
+background-size: 50%;
+background-size: 3.2em;
+background-size: 8px;
+background-size: auto;
+
+height: 55vh;
+padding:0;
+margin:0;
+
+
+
+}
+
+.about-txt{	
+	font-size: 2.5rem;
+	line-height: 1.6em;
+}
+
+
+/*-----------------------------------------------------------*/
+/* cores do texto do endereço da Igreja */
+
+.footer{ 
+	background-color: #1a1a1a;
+	color: rgb(246, 247, 246);
+	font-size: 1.6rem;	
+}
+
+.a-paz-do-senhor address::first-line {
+	line-height: 60px;
+}
+
+.a-paz-do-senhor address{font-style: normal;}
+
+.a-paz-do-senhor {
+	font-style: normal;
+}
+
+/* FIM estilos ----------------------------------*/
+
+@media screen and (max-width: 780px) {
+	.about-txt{	
+		font-size: 1.9rem;
+		line-height: 1.3em;
+	}
+
+	
+}
